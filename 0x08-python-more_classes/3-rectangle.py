@@ -53,9 +53,7 @@ class Rectangle:
     def __str__(self):
         """Prints the rectangle"""
         string = ""
-        if self.__height == 0 and self.__width == 0:
-            print()
-        else:
+        if self.__height != 0 and self.__width != 0:
             string += "\n".join(
                     "#" * self.__width for j in range(self.__height))
         return string
