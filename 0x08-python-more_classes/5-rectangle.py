@@ -61,6 +61,7 @@ class Rectangle:
     def __repr__(self):
         """Fallback for str"""
         return "Rectangle({:d}, {:d})".format(self.__width, self.__height)
+
     def __del__(self):
         """Deleting an object"""
         print("Bye rectangle...")
