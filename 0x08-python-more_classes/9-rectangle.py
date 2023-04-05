@@ -83,7 +83,7 @@ class Rectangle:
         else:
             return rect_2
 
-        @classmethod
-        def square(cls, size=0):
-            """new class whereheight and width are equal"""
-            return cls(size, size)
+    @classmethod
+    def square(cls, size=0):
+        """Class attribute to create a new rectangle"""
+        return cls(size, size)
