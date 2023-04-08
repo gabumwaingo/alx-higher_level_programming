@@ -15,7 +15,7 @@ def matrix_divided(matrix, div):
             raise TypeError(err)
         len_row.append(len(row))
         for element in row:
-            if type(element) not in[int, float]:
+            if type(element) not in [int, float]:
                 raise TypeError(err)
         row_count += 1
     if len(set(len_row)) > 1:
@@ -24,5 +24,6 @@ def matrix_divided(matrix, div):
         raise TypeError("div must be a number")
     if int(div) == 0:
         raise ZeroDivisionError("division by zero")
-    new_matrix = list(map(lambda row: list(map(lambda x: round(x / div, 2), row)), matrix))
+    new_matrix = list(map(lambda row:
+                                    list(map(lambda x: round(x / div, 2), row)), matrix))
     return new_matrix
