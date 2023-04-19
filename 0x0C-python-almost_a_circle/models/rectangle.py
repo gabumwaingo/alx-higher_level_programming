@@ -79,3 +79,9 @@ class Rectangle(Base):
             [print(" ", end="") for x in range(self.x)]
             [print("#", end="") for w in range(self.width)]
             print("")
+
+    def __str__(self):
+        """Overriding the str method"""
+        return "[Rectangle] {} {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y,
+                self.__width, self.__height)
