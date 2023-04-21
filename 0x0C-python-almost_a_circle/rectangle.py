@@ -117,12 +117,6 @@ class Rectangle(Base):
                 elif k == "y":
                     self.y = v
 
-    def __str__(self):
-        """Overriding the str method"""
-        return "[Rectangle] ({}) {}/{} - {}/{}".format(
-                self.id, self.__x, self.__y,
-                self.__width, self.__height
-
     def to_dictionary(self):
         """Return the dictionary representation of a Rectangle."""
         return {
@@ -132,3 +126,9 @@ class Rectangle(Base):
             "x": self.x,
             "y": self.y
         }
+
+    def __str__(self):
+        """Overriding the str method"""
+        return "[Rectangle] ({}) {}/{} - {}/{}".format(
+                self.id, self.__x, self.__y,
+                self.__width, self.__height)
