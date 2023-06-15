@@ -1,5 +1,5 @@
 #!/usr/bin/node
-const myObject == {
+const myObject = {
   type: 'object',
   value: 12
 };
