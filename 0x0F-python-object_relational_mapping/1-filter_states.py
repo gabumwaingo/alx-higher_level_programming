@@ -1,5 +1,5 @@
 #!/usr/bin/python3
-# lists all staes starting with letter N in ascending order
+""" lists all states beginning with N """
 
 import sys
 import MySQLdb
