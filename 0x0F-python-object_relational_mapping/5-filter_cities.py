@@ -14,14 +14,15 @@ if __name__ == "__main__":
             port=3306)
     c = db.cursor()
     state = sys.argv[4]
-    c.execute("""SELECT *
+    c.execute("""SELECT `c`.`name`
                 FROM cities as `c`
                 INNER JOIN states as `s`
                 ON `c`.`state_id` = `s`.`id`
                 WHERE `s`.`name` = %s
                 ORDER by `c`.`id`""", (state,))
     cities = c.fetchall()
-    for city in cities:
-        print(city)
+    city_names = [city[0] for city in cities]
+    output = ', '.join(city_names)
+    print(output)
     c.close()
     db.close()
