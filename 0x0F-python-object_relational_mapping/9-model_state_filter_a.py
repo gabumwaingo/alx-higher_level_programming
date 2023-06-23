@@ -16,9 +16,5 @@ if __name__ == "__main__":
     states_a = session.query(State).filter(State.name.like(
         '%a%')).order_by(State.id).all()
 
-    if states_a:
-        for states in states_a:
-            print('{0}: {1}'.format(states.id, states.name))
-
-    else:
-        print('No state with letter a')
+    for states in states_a:
+        print('{0}: {1}'.format(states.id, states.name))
