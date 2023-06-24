@@ -1,4 +1,4 @@
-#!/usr/.bin/puthon3
+#!/usr/bin/python3
 """ Prints all city objects from database"""
 
 from sys import argv
