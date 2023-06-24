@@ -1,5 +1,7 @@
 #!/usr/bin/python3
 """ Lists all states and corresponding cities in database """
+
+
 import sys
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
