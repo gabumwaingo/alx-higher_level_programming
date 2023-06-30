@@ -1,5 +1,0 @@
-#!/usr/bin/env bash
-#displays the body of the response of a url
-url=$1
-response=$(curl -s $url)
-echo "$response"
