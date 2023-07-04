@@ -8,7 +8,7 @@ if __name__ == "__main__":
     repo_name = sys.argv[1]
     owner = sys.argv[2]
 
-    url = "https://api.github.com/repos/{owner}/{repo}/commits"
+    url = f"https://api.github.com/repos/{owner}/{repo_name}/commits"
     params = {"per_page": 10}
 
     response = requests.get(url, params=params)
