@@ -14,7 +14,7 @@ if __name__ == "__main__":
         q = ""
 
     url = "http://0.0.0.0:5000/search_user"
-    payload = {'q' : q}
+    payload = {'q': q}
 
     response = requests.post(url, data=payload)
     if response.headers.get('content-type') == 'application/json':
